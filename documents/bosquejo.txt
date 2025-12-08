@@ -1,0 +1,24 @@
+In American football, the National Football League (NFL) collects tracking data via their tracking
+system known as Next Gen Stats by having radio frequency identification (RFID) tags installed
+into players’ shoulder pads and the football. These high-resolution data, measured at a rate of 10
+frames per second, provide positional information for all players on the field (and also the ball).
+Along with their player tracking system, the NFL also launched the Big Data Bowl—an annual data
+science competition focusing on player tracking data—in 2018 (NFL Football Operations, 2024).
+Each year, the NFL Big Data Bowl releases a sample of tracking data to accompany a competition
+theme on a specific aspect of American football such as pass coverage, special teams, and linemen
+on pass plays. The competition has paved the path for many innovations in football analytics and
+subsequently established the foundation for the peer-reviewed literature on statistical analysis of
+football tracking data (Lopez, 2020).
+
+. Directly-computed variables such as distance, velocity, acceleration, orientation and
+angle for each player (and between players in the case of distance and angle) are quintessential to
+developments in player evaluation with tracking data
+
+For our analysis, we use the player tracking data supplied by the NFL Big Data Bowl 2021 (Howard
+et al., 2020). The data are recorded at a frequency of 10 Hz (i.e. 10 times a second) and contain
+information for every passing play across all 17 weeks of the 2018 NFL regular season. Of primary
+interest, the data provide x and y coordinates of players on the field at every frame within each
+play. It is worth noting that offensive and defensive linemen information are omitted from the
+provided tracking data, resulting in fewer than 22 observed players on the field for each play. The
+data also record player attributes at each time step including speed, acceleration, distance traveled
+from previous frame, orientation, and angle of motion.

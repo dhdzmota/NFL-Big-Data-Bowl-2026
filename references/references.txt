@@ -1,0 +1,9 @@
+## Tracking data:
+https://arxiv.org/pdf/2301.04001
+
+## Density Stuff:
+https://static.capabiliaserver.com/frontend/clients/barca/wp_prod/wp-content/uploads/2018/05/Wide-Open-Spaces.pdf
+https://arxiv.org/pdf/2406.17220
+https://www.kaggle.com/code/matthewpchang/uncovering-missed-tackle-opportunities/
+https://www.kaggle.com/code/amcook/optimization-of-weak-side-schemes-vs-read-option
+

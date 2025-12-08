@@ -1,0 +1,36 @@
+Dominance function
+Is composed by three parts:
+sign * A * G
+
+--------
+Sign is just a reference on 'player_side_numerical':
+    - If player attacsk: 1
+    - If player deffends: -1
+--------
+A is a coeficient yielded in general from two main components: Mechanics and Teamwork.
+    A = M * S * (1.0 + lambda_cohesion*C)
+
+M: how much physical “oomph” (energy, momentum, force, action).
+    M = alpha_ke(KE/KE_ref) + alpha_mom(Mom/Mom_ref) + alpha_f(F/F_ref) + alpha_act(Act/Act_ref)
+    Where, the weight is the mass.
+    - KE: 1/2 w s**2
+    - Mom = w*s
+    - F = w*a
+    - Act = w*s**2*t
+
+S: Stability: Alinged body and motion is more dominant.
+    S = 1/2 [1+cos(oi-thethai)] This penalizes "body pointed away".
+
+C: Team mesh: Dominance is amplified when you are supported and aligned with nearby teammates.
+
+C = Sum (1/d max(0, cos(0i-alphai)e) max(0, cos(0j - alphai)))/ sum of reciprocal distances.
+--------
+G: Where on the field you are and how spread?
+
+G =  e^(-1/2*quad)/(2pi(a2*b2)**(1/2)))
+Where... quad = u**2/a2 + v**2/b2 and
+u = c*dx + s*dy
+v = -s*dx + c*dy
+
+a2 = s_long**2 (r_reach)*(1 + beta_s)
+b2 = s_lat**2
