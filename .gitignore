@@ -1,0 +1,5 @@
+*.parquet
+*.zip
+*.csv
+experiments/figures/*
+assets/presentation/
