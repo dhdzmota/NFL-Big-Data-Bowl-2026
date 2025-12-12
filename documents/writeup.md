@@ -8,17 +8,17 @@ We can quantify speed, acceleration, and expected yards. We can measure separati
 
 This project was born from those questions.
 
-What if it were possible to quantify a player's presence as it unfolds? What if the field could be described as an interacting system in constant negotiation; where players continuously rewrite each other’s opportunities? The **Dominance Index** is our attempt to answer those questions.
+What if it were possible to quantify a player's presence as it unfolds? What if the field could be described as an interacting system in constant negotiation; where players continuously rewrite each other’s opportunities? The **[Dominance Index](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-index)** is our attempt to answer those questions.
 
 Traditional metrics rarely capture the spatial control dynamics that precede and often dictate the outcome.
 
-The **Dominance Index** is not a statistic about players in isolation; it is a metric about their interactions. It measures how each player reshapes the playable space around them, frame by frame, from pass release to final resolution. In other words, it quantifies the influence landscape of a play.
+The **[Dominance Index](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-index)** is not a statistic about players in isolation; it is a metric about their interactions. It measures how each player reshapes the playable space around them, frame by frame, from pass release to final resolution. In other words, it quantifies the influence landscape of a play.
 
 ---
 
 ## How the System Works: From Frames to Influence Landscapes
 
-Every play is decomposed into its constituent frames. At each frame, every player contributes a _dominance field_ which is a measurable imprint of how their physical state, positioning, and interactions affect the surrounding space.
+Every play is decomposed into its constituent frames. At each frame, every player contributes a _[dominance field](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-field)_ which is a measurable imprint of how their physical state, positioning, and interactions affect the surrounding space.
 
 ![Overview image](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/assets/figures/Overview.png?raw=true)
 
@@ -30,7 +30,7 @@ To construct this, we used the following attributes from the tracking data:
 - Team designation (offense/defense)
 
 From these, we compute additional quantities:
-- Mechanical properties derived from physics
+- Mechanical properties derived from physics (such as [Kinetic Energy](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#kinetic-energy), [Momentum](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#momentum),  [Force](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#force) and [Action](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#action)).
 - Community structure extracted via proximity networks.
 
 ![Attributes and features](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/assets/figures/attributes-and-features.png?raw=true)
@@ -41,10 +41,10 @@ Individually, these metrics describe motion. Together, they describe presence.
 
 The first layer of the analysis examines how players naturally form _clusters of interaction_ within each frame.
 
-1. A fully connected graph is created among all players.
+1. A [fully connected graph](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#fully-connected-graph) is created among all players.
 2. Edges are weighted by inverse distance (1/distance): Closer players exert stronger mutual influence.
 3. A dynamic threshold filters to the top 20% strongest edges. These represent meaningful spatial relationships. 
-4. In each frame, we apply _Louvain community detection_ to uncover emergent clusters.
+4. In each frame, we apply _[Louvain community detection](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#louvain-community-detection)_ to uncover emergent clusters.
 5. From these evolving communities, we identify the longest-lasting community assignments across the play, ensuring stable player-group identities.
 
 These communities emerge organically from player movement. They can be understood as pockets of interaction where dominance exchanges might be most intense.
@@ -63,9 +63,9 @@ This captures the asymmetry of intent: defenders constrain opportunities; offend
 B. **Amplitude**: The Mechanical Coefficient Amplitude
 
 A single value that synthesizes multiple physical and behavioral components of a player’s movement. It captures how forcefully, efficiently, and cohesively a player interacts with the play:
-- **Mechanical**: Kinetic energy, momentum, force, and action, all normalized to historical reference values to ensure comparability across players and positions.
-- **Stability**: Orientation-to-motion stability, which measures how aligned a player’s body orientation is with their direction of movement.
-- **Cohesion**: Team cohesion, describing how well a player remains integrated with the movement of their immediate group or community, rather than drifting into structurally weak or isolated positions.
+- **Mechanical**:  [Kinetic energy](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#kinetic-energy), [momentum](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#momentum),  [force](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#force) and [action](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#action), all normalized to historical reference values to ensure comparability across players and positions.
+- **[Stability](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#stability)**: Orientation-to-motion stability, which measures how aligned a player’s body orientation is with their direction of movement.
+- **[Cohesion](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#cohesion)**: Team cohesion, describing how well a player remains integrated with the movement of their immediate group or community, rather than drifting into structurally weak or isolated positions.
 Players who move with purpose, physical leverage, and synchronized alignment with their unit contribute higher Ampitude. These are the players who subtly shift the geometry of the play, even before the ball arrives.
 
 ![Mathematical Amplitude](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/assets/figures/mathematical_amplitude.png?raw=true)
@@ -89,13 +89,13 @@ Once Sign, Amplitude, and the Gaussian Influence Field are obtained, we combine 
 
 ![Dominance formula](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/assets/figures/dominance_formula.png?raw=true)
 
-This formulation produces a spatial influence surface describing how strongly, and in which direction, each player impacts the surrounding playable space. The dominance field evolves frame by frame, reflecting real-time changes in mechanics, orientation, and interactions with other players.
+This formulation produces a spatial influence surface describing how strongly, and in which direction, each player impacts the surrounding playable space. The [dominance field](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-field) evolves frame by frame, reflecting real-time changes in mechanics, orientation, and interactions with other players.
 
 ---
 
 ### Step 3: Dominance Index: The Final Layer of Meaning
 
-Each player’s instantaneous dominance field is masked onto a 5-yard radius around them. Within this zone, we evaluate how much of the dominance is aligned with the player’s own team and compute a proportion between 0 and 1.
+Each player’s instantaneous [dominance field](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-field) is masked onto a 5-yard radius around them. Within this zone, we evaluate how much of the dominance is aligned with the player’s own team and compute a proportion between 0 and 1.
 
 This yields the **Dominance Index** for that moment: A value that reflects both what a player does and what the surrounding space becomes because of them and because of their interactions with other players.
 
@@ -107,7 +107,7 @@ As players accelerate, rotate, engage, disengage, and negotiate space, their Dom
 
 We present the full system in a cohesive, frame-by-frame report:
 
-- Tracking visualizations showing each player’s movement with the corresponding Dominance field.
+- Tracking visualizations showing each player’s movement (the direction is represented with the black arrow, and the orientation of the player is represented with the purple arrow) with the corresponding [dominance field](https://github.com/dhdzmota/NFL-Big-Data-Bowl-2026/blob/main/documents/glossary.md#dominance-field).
 - A projection through time of each dominance fields across the field to understand field control and area divisions.
 - Game status with the corresponding play context. 
 - Players with the highest average dominance through the play.
