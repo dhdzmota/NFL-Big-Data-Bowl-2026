@@ -9,3 +9,5 @@
 - Admin (2021). FootballX&O's https://www.footballxos.com/download/49ers-offense-2014-greg-roman/ 
 - National Football League (2025). Football Operations: https://operations.nfl.com/gameday/analytics/stats-articles/
 - Ríos, J. (2023). Cómo ver en tiempo real estadísticas de la NFL con Amazon. https://www.infobae.com/tecno/2023/09/23/como-ver-en-tiempo-real-estadisticas-de-la-nfl-con-amazon/
+
+*OpenAI. ChatGPT (GPT-4 / GPT-4.1 / GPT-5), used for text revision, stylistic refinement, and image generation. OpenAI, 2025. https://chat.openai.com/
