@@ -119,6 +119,49 @@ We present the full system in a cohesive, frame-by-frame report:
 This visualization lets us watch the play the way the play truly happened.
 
 ---
+## Dominance in Action: Community-Level Narratives (Understanding the plots)
+
+Once players are grouped into communities through their spatial interactions, dominance ceases to be an abstract surface and becomes a story. Each community defines a localized arena where influence is negotiated, exchanged, amplified, or extinguished. What follows is a qualitative reading of dominance as it unfolds within each detected interaction cluster of the play.
+
+### Community I (First Interaction Graph): Ringo & Morrow vs. Waller & Barkley
+
+The first community emerges around a defensive pair: Kelee Ringo (CB) and Nicholas Morrow (ILB), matched against Darren Waller (TE) and Saquon Barkley (RB) on offense.
+
+From the outset, Saquon Barkley establishes clear dominance within this interaction. His movement maintains a safe and controlled distance from Kelee Ringo, allowing him to project influence without direct confrontation. This spatial patience results in sustained offensive dominance, as Barkley reshapes the nearby playable space while avoiding defensive collapse.
+
+Simultaneously, Darren Waller begins with high attacking dominance, but this advantage is quickly contested. Nicholas Morrow closes the distance and applies pressure, sharply reducing Waller’s dominance footprint. What follows is not a clean takeover, but a rhythmic exchange: dominance oscillates between the two as each adjustment provokes a counter-adjustment. This interaction behaves less like a collision and more like a dance, with neither player fully surrendering control.
+
+During this exchange, Kelee Ringo subtly drifts toward Barkley’s trajectory, notably without direct visual engagement. His movement carries low dominance, suggesting reactive positioning rather than proactive control. While spatially relevant, Ringo’s influence remains secondary to Barkley’s sustained command of the interaction.
+
+### Community II (Second Interaction Graph): Blankenship vs. Bellinger
+
+The second community is a tighter duel between Reed Blankenship (FS) and Daniel Bellinger (TE).
+
+Early in the play, Blankenship experiences a significant loss of dominance as Bellinger approaches with speed and intent, attempting to infiltrate space decisively. Bellinger’s forward momentum temporarily bends the influence landscape in his favor, compressing Blankenship’s control zone.
+
+However, as the interaction progresses, Blankenship adapts. Through positional correction and improved alignment, he gradually recovers dominance, culminating in a late-stage reversal. The result is a clear exchange: initial offensive dominance gives way to defensive control. This community exemplifies dominance as a fluid quantity, responsive to timing, proximity, and adjustment rather than raw speed alone.
+
+### Community III (Third Interaction Graph): Reddick, Bradberry, Byard & Brown vs. Hodgins & Slayton
+
+The third community is the most complex, involving Hasson Reddick (OLB), James Bradberry (CB), Kevin Byard (FS), and Sydney Brown (SS) on defense against Isaiah Hodgins (WR) and Darius Slayton (WR) on offense.
+
+Within this dense interaction field, Darius Slayton emerges as the most dominant individual. He achieves the highest overall dominance of the play, briefly sacrificing control only to reclaim it decisively moments later. This temporary concession functions as a strategic trade: Slayton yields space to reposition, then reasserts influence with greater amplitude. His dominance curve reflects autonomy: he generates control largely on his own terms.
+
+In contrast, Isaiah Hodgins is gradually neutralized. Initially, James Bradberry does not exert strong dominance, but his influence builds steadily through alignment and proximity. When Bradberry finally engages Hodgins directly, dominance shifts into an exchange, ending with Hodgins constrained and Bradberry asserting defensive control.
+
+Another notable interaction involves Kevin Byard, who briefly contests Slayton’s dominance. However, Byard abandons this engagement to cover another receiver, and in doing so, relinquishes his influence over Slayton entirely. This moment highlights a key insight: dominance is not only gained through action, but also lost through reassignment.
+
+Sydney Brown presents a special case. He records the highest average dominance within the community, but this dominance is largely uncontested. Brown spends much of the play running alone, unchallenged, accruing influence without friction. This raises a counterfactual question: had Brown redirected his attention toward Slayton, the dominance landscape, and potentially the play’s outcome, might have been entirely different.
+
+### Community IV (Fourth and last Interaction Graph): Tyrod Taylor in Isolation
+
+The final community consists solely of Tyrod Taylor (QB). For much of the play, Taylor remains isolated from direct interaction, which grants him substantial early dominance. With no immediate defensive pressure, his dominance reflects temporal control rather than spatial conflict. This isolation provides the cognitive and physical bandwidth required to scan the field and delay commitment. In this sense, Taylor’s dominance is not about overpowering an opponent, but about preserving optionality. His influence lies in the freedom to choose.
+
+### Main Community takeaway: 
+
+_This community-level reading demonstrates how dominance is not uniformly distributed, nor strictly tied to positions or outcomes. Instead, it emerges from localized negotiations of space, attention, and timing. The play is decided by how dominance is exchanged, deferred, or abandoned across interacting systems._
+
+---
 
 ## What the Dominance Index Reveals
 
